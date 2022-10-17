@@ -20,11 +20,20 @@ Rough solution
 - We make a complete search checking each element of list a with list b
 - Append all element not in list b
 """
+
+# Not completely working solution
+#Check why the double for loop doesn't work
+"""
+a was [1,2,3], b was [1, 2], expected [3]: [1, 2, 3, 3] should equal [3]
+"""
 def array_diff(a, b):
 	new_array = []
-	for i in a:
-		for z in b:
-			if i != z:
-				new_array.append(i)
+	if len(b) == 0:
+		return a
+	else:	
+		for i in a:
+			for z in b:
+				if i != z:
+					new_array.append(i)
 	return new_array
 
