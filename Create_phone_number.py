@@ -27,7 +27,7 @@ string_num = [str(x) for x in number]
 string_num.insert(0, "(")
 string_num.insert(4, ")")
 string_num.insert(5, " ")
-string_num.insert(10, "-")
+string_num.insert(9, "-")
 joined = ''.join(str(e) for e in string_num)
 
 print(joined)
